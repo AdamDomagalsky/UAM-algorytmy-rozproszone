@@ -1,8 +1,3 @@
-# komunikaty zamieniają się miejscami
-# coś jest mocno nie tak...
-# czy res sprawdzać po numerze fazy czy po liczniku? chyba liczniku...
-# zamiast czytajKomTypu można chyba zapisać $x i usunąć przez lremove
-
 source symul_lib.tcl;
 
 set liczbaWierz 8

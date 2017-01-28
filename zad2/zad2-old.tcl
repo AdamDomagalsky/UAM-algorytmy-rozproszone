@@ -21,7 +21,7 @@ fiber create $liczbaWierz {
 	if {$id!=0} {
 		wyslij 0 $kolor;
 	} else {
-		
+
 	}
 	fiber yield;
 	for {set i 1} {i <= stopien} {incr i} {
@@ -44,5 +44,5 @@ set_run 0; fiber yield; runda; set_run 1; fiber restart
 fiber error
   # wyswietla stan fiberow ({}, ended, error)
 }
- 
+
 fiber yield; runda; wizualizacja
