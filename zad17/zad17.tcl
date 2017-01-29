@@ -16,6 +16,13 @@ iterate i $liczbaWierz {
 fiber create $liczbaWierz {
     set lider {};
     set minID {};
+
+    # przechodzę do następnego wierzchołka
+    # chodzi tylko o to, żeby przed losowaniem wierzchołków w egzekucji
+    # były zadeklarowane zmienne 'lider' i 'minID' potrzebne
+    # w procedurze 'wizualizacja'
+    fiber yield;
+
     # ponieważ cykl jest zorientowany, wysyłam tylko jednym połączeniem
     # zakładam, że komunikaty wysyłam połączeniem 0, a odbieram połączeniem 1
     dostarcz 0 "LE $id";
@@ -45,16 +52,25 @@ proc wizualizacja {} {
   fiber_iterate {_puts "$id, $lider, $minID, $kom0, $kom1"}
 }
 
+# globalny licznik potrzebny do poprawnej wizualizacji
+global licznik;
+set licznik 0;
+
+proc egzekucja {liczbaWierz licznik args} {
+  set random [expr {int(rand()*[expr $liczbaWierz+1])}];
+  for {set i 0} {$i < $liczbaWierz} {incr i} {
+    if {$i!=$random && $licznik!=0} {
+      _puts "Wierzchołek $i działa"
+      fiber switchto $i;
+    } elseif {$licznik==0} {
+      _puts "Wierzchołek $i działa"
+      fiber switchto $i;
+      set licznik [expr $licznik + 1];
+    }
+  }
+}
+
+egzekucja $liczbaWierz $licznik; wizualizacja;
+
 fiber error
 pokazKom
-
-# for {set i 0} {i < $liczbaWierz} {incr i} {
-#
-# }
-
-fiber switchto 0;
-fiber switchto 1;
-fiber switchto 2;
-fiber switchto 3;
-fiber switchto 4;
-wizualizacja;
