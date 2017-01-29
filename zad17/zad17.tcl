@@ -15,6 +15,7 @@ iterate i $liczbaWierz {
 
 fiber create $liczbaWierz {
     set lider {};
+    set minID {};
     # ponieważ cykl jest zorientowany, wysyłam tylko jednym połączeniem
     # zakładam, że komunikaty wysyłam połączeniem 0, a odbieram połączeniem 1
     dostarcz 0 "LE $id";
@@ -23,14 +24,16 @@ fiber create $liczbaWierz {
       set msg [lindex [czytaj 1] 1];
 
       if {$msg!=""} {
-        if {$msg>$id} {
+        if {$msg<$id} {
           dostarcz 0 "LE $msg";
+          set minID $msg;
         } elseif {$msg==$id} {
           set lider 1;
-          dostarcz 0 "LE -1";
-        } elseif {$msg==-1 && $lider=={}} {
+          set minID $msg;
+          dostarcz 0 "LE false";
+        } elseif {$msg=="false" && $lider=={}} {
           set lider 0;
-          dostarcz 0 "LE -1";
+          dostarcz 0 "LE false";
         }
       }
       fiber switchto main;
@@ -39,11 +42,15 @@ fiber create $liczbaWierz {
 InicjalizacjaAsynch
 
 proc wizualizacja {} {
-  fiber_iterate {_puts "$id, $lider, $kom0, $kom1"}
+  fiber_iterate {_puts "$id, $lider, $minID, $kom0, $kom1"}
 }
 
 fiber error
 pokazKom
+
+# for {set i 0} {i < $liczbaWierz} {incr i} {
+#
+# }
 
 fiber switchto 0;
 fiber switchto 1;
