@@ -1,0 +1,138 @@
+const int RozmiarCzytelni=5;
+
+// te zmienne opisuja stan czytelni -----------------------------
+
+int IloscCzytelnikow=0;
+int IloscPisarzy=0;
+
+int wCzytelni[8];
+int wCzytelniPisarze[4];
+
+int ile[8];
+int ilePisarzy[4];
+ 
+// --------------------------------------------------------------
+
+binarysem I=1;
+semaphore R=RozmiarCzytelni;
+binarysem W=1;
+
+
+void Czytelnik(int nr)
+{
+  int atrapa;
+
+
+  while(1) {
+
+    wait(R);
+	
+	wait(I);
+
+    IloscCzytelnikow++;
+	ile[nr] = ile[nr] + 1;
+	wCzytelni[nr] = 1;
+    signal(I);
+	
+    atrapa=123;
+    atrapa=123; // czytelnik przebywa w czytelni
+    atrapa=123;
+
+    wait(I);
+    IloscCzytelnikow--;
+	wCzytelni[nr] = 0;
+    signal(I);
+
+    signal(R);
+
+    atrapa=123;
+    atrapa=123; // czytelnik robi "cos innego"
+    atrapa=123;
+  }
+}
+
+void Pisarz(int nr)
+{
+  int i,j,atrapa;
+
+
+  while(1) {
+
+    wait(W);
+
+    for(i=1; i<=RozmiarCzytelni; i++) wait(R);
+
+    wait(I);
+
+    IloscPisarzy++;
+	ilePisarzy[nr] = ilePisarzy[nr] + 1;
+	wCzytelniPis[nr] = 1;
+
+    signal(I);
+
+    atrapa=123;
+    atrapa=123; // pisarz przebywa w czytelni
+    atrapa=123;
+
+    wait(I);
+
+    IloscPisarzy--;
+	wCzytelniPis[nr] = 0;
+    signal(I);
+
+    for(i=1; i<=RozmiarCzytelni; i++) signal(R);
+
+    signal(W);
+
+    atrapa=123;
+    atrapa=123; // pisarz robi "cos innego"
+    atrapa=123;
+  }
+}
+
+void _Kontrola()
+{
+  int atrapa;
+
+  while(1) {
+  
+
+	if(ilePisarzy[1] > 100) {
+	
+		cout <<ilePisarzy[1]<<"|"<<ilePisarzy[1]<<"|"<<ilePisarzy[3]<<"|";
+		cout <<ile[1]<<"|"<<ile[2]<<"|"<<ile[3]<<"|"<<ile[4]<<"|"<<ile[5]<<"|"<<ile[6]<<"|"<<ile[7]<<endl;
+	
+		exit(1);
+	}
+
+	cout <<wCzytelniPisarze[1]<<wCzytelniPisarze[2]<<wCzytelniPisarze[3]<<"|";
+    cout <<wCzytelni[1]<<wCzytelni[2]<<wCzytelni[3]<<wCzytelni[4]<<wCzytelni[5]<<wCzytelni[6]<<wCzytelni[7]<<endl;
+	
+    atrapa=123;
+    atrapa=123;
+    atrapa=123;
+    atrapa=123;
+    atrapa=123;
+    atrapa=123;
+  }
+}
+
+main()
+{
+  cobegin {
+    Czytelnik(1);
+    Czytelnik(2);
+    Czytelnik(3);
+    Czytelnik(4);
+    Czytelnik(5);
+    Czytelnik(6);
+    Czytelnik(7);
+
+    Pisarz(1);
+    Pisarz(2);
+	Pisarz(3);
+
+    _Kontrola();
+  }
+}
+

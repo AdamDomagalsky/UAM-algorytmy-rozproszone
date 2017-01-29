@@ -1,0 +1,39 @@
+int licznik=0;
+int i1 = 0;
+int i2 = 0;
+
+semaphore sem=1;
+
+void proc1()
+{
+  while(1) {
+    wait(sem);  
+    i1 = i1 + 1;
+	licznik = licznik + 1;
+    signal(sem);  
+  } 
+}
+
+void proc2()
+{
+  while(1) {
+    wait(sem);
+    i2 = i2 + 1;
+ 	licznik = licznik + 1;
+    signal(sem);
+
+  } 
+}
+
+void procKontr() {
+  while(1) {
+    cout << i1+i2 << ":" << licznik << endl;
+  }
+}
+
+main()
+{
+  cobegin {
+    proc1(); proc2(); procKontr();
+  }
+}

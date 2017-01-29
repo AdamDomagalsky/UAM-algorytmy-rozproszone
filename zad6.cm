@@ -1,0 +1,112 @@
+atomic void Pokaz(string S) 
+{
+  cout<<S<<endl;
+}
+
+
+const int rozmiar_buf=50; // "skończony" bufor
+int buf[rozmiar_buf];
+int buf_czyt=0;
+int buf_pisz=0;
+
+int el=0;
+
+void Produkuj()
+{
+  string[50] str;
+  el++;
+
+  buf[buf_pisz]=el;
+  buf_pisz++;
+  
+  if(buf_pisz>=rozmiar_buf) exit(1);
+
+}
+
+void Konsumuj(int nr)
+{
+  int el; string[50] str;
+  el=buf[buf_czyt];
+
+  sprintf(str,"konsument %d; konsumuje %d;",
+    nr, el);
+  Pokaz(str);
+
+  buf_czyt++;
+  if(buf_czyt>=rozmiar_buf) exit(1);
+}
+
+binarysem S = 1;
+semaphore Wolne = 0; 
+semaphore Pelne = rozmiar_buf; 
+
+void Producent()
+{
+  int atrapa;
+
+  while(1) {
+    
+    wait(Pelne);
+    wait(S);
+    Produkuj();
+    signal(S);
+    signal(Wolne);
+
+    atrapa=321;
+    atrapa=321; 
+    atrapa=123;
+    atrapa=321;
+    atrapa=321;
+    atrapa=321;
+    atrapa=123;
+    atrapa=321;
+    atrapa=321;
+    atrapa=321;
+    atrapa=123;
+    atrapa=321;
+    atrapa=321;
+    atrapa=321;
+    atrapa=321;
+    atrapa=321;
+    atrapa=123;
+    atrapa=321;
+
+  }
+}
+
+
+void Konsument(int nr)
+{
+  int atrapa; string[20] str;
+
+  while(1) {
+
+    wait(Wolne);
+    wait(S);
+    Konsumuj(nr);
+    signal(S);
+    signal(Pelne);
+     
+    atrapa=123;
+    atrapa=321;
+    atrapa=123;
+    atrapa=321;
+    atrapa=123;
+    atrapa=321;
+    atrapa=123;
+    atrapa=321;
+    atrapa=321;
+   
+
+  }
+}
+
+main()
+{
+  cobegin {
+    Konsument(1);
+    Konsument(2);
+    Producent();
+  }
+}
+

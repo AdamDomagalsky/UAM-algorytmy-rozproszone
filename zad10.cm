@@ -1,0 +1,53 @@
+int Jem[5];
+int Widelec[5]; 
+
+binarysem S = 1;
+binarysem Waiter = 1;
+
+
+
+void Filozof(int nr) // Nr=0..4
+{
+   while(1) {
+
+	wait(S);
+	wait(Waiter);
+
+	Widelec[nr] = Widelec[nr] - 1;
+	Widelec[(nr + 1) % 5] = Widelec[(nr + 1) % 5] - 1;
+
+	Jem[nr] = 1;
+
+	signal(Waiter);
+
+	Widelec[nr] = Widelec[nr] + 1;
+	Widelec[(nr + 1) % 5] = Widelec[(nr + 1) % 5] + 1;
+
+	Jem[nr] = 0;	
+
+	signal(S);
+
+   }
+}
+
+
+void procesKontrolny()
+{
+  while(1) {
+    cout <<Jem[0]<<Jem[1]<<Jem[2]<<Jem[3]<<Jem[4]<<endl;
+  }
+}
+
+main()
+{
+
+  cobegin {
+    Filozof(0);
+    Filozof(1);
+    Filozof(2);
+    Filozof(3);
+    Filozof(4);
+
+    procesKontrolny();
+  }
+}
