@@ -53,7 +53,7 @@ proc wizualizacja {} {
 }
 
 # globalny licznik potrzebny do poprawnej wizualizacji
-global licznik;
+# global licznik;
 set licznik 0;
 
 proc egzekucja {liczbaWierz licznik args} {
@@ -65,12 +65,12 @@ proc egzekucja {liczbaWierz licznik args} {
     } elseif {$licznik==0} {
       _puts "Wierzchołek $i działa"
       fiber switchto $i;
-      set licznik [expr $licznik + 1];
     }
   }
+  set licznik [expr $licznik + 1];
 }
 
-egzekucja $liczbaWierz $licznik; wizualizacja;
+egzekucja $liczbaWierz $licznik; set licznik 1; wizualizacja;
 
 fiber error
 pokazKom

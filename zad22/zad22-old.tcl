@@ -1,8 +1,3 @@
-# komunikaty zamieniają się miejscami
-# coś jest mocno nie tak...
-# czy res sprawdzać po numerze fazy czy po liczniku? chyba liczniku...
-# zamiast czytajKomTypu można chyba zapisać $x i usunąć przez lremove
-
 source symul_lib.tcl;
 
 set liczbaWierz 8
@@ -18,10 +13,20 @@ set sasiedzi(3) {5 7}
 fiber create $liczbaWierz {
   set lider 1;
   set phase 0;
+  set reqSent 0;
+
+  proc K { x y } { set x }
+  proc lremove { listvar string } {
+    upvar $listvar in
+    foreach item [K $in [set in [list]]] {
+      if {[string equal $item $string]} { continue }
+      lappend in $item
+    }
+ }
 
   while {$run} {
     set licznik [expr 2*pow($phase, 1)];
-    if {$lider==1} {
+    if {$lider==1 && $reqSent==0} {
       if {$licznik>0} {
         dostarcz 0 "req $phase $id_los $licznik";
         dostarcz 1 "req $phase $id_los $licznik";
@@ -29,17 +34,35 @@ fiber create $liczbaWierz {
         dostarcz 0 "req $phase $id_los 1";
         dostarcz 1 "req $phase $id_los 1";
       }
+      set reqSent 1;
     }
 
     fiber switchto main;
 
-    while {$kom(0)!="" || $kom(1)!=""} {
+    while {($kom(0)!="" || $kom(1)!="") || $reqSent==1} {
+
+      foreach x $kom(0) {
+        foreach y $kom(1) {
+          if {[lindex $x 0]=="req" && [lindex $y 0]=="req" && [lindex $x 2]==[lindex $y 2] && [lindex $x 2] > $id_los} {
+            _puts "Ooo chyba znaleziono lidera!"
+            set wierz0 $x;
+            lremove kom(0) $x;
+            set wierz1 $y;
+            lremove kom(1) $y;
+            dostarcz 0 "res [lindex $wierz0 1] [lindex $wierz0 2] youAreFinalLider [expr 2*pow([lindex $wierz0 1], 1)]";
+            dostarcz 1 "res [lindex $wierz1 1] [lindex $wierz1 2] youAreFinalLider [expr 2*pow([lindex $wierz1 1], 1)]";
+          }
+        }
+      }
+
+
       foreach x $kom(0) {
         # jeśli otrzymałem request z lewej (?) strony i jest skierowany do mnie
         if {[lindex $x 0]=="req" && [lindex $x 3]==1} {
           _puts "Wierzchołek nr $id, id_los: $id_los, wykonuje request. Nr fazy: $phase";
           # zapisz komunikat i usuń z listy komunikatów
-          set wierz0 [czytajKomTypu [lindex $x 0] 0];
+          set wierz0 $x;
+          lremove kom(0) $x;
           # jeśli ID_losowe w komunikacie jest większe od mojego ID_los
           if {[lindex $wierz0 2] > $id_los} {
             # jeśli numer fazy jest większy od >= 1
@@ -48,11 +71,11 @@ fiber create $liczbaWierz {
               # w komunikacie odsyłam numer fazy wierzchołka od którego dostałem komunikat
               # komunikat dostałem z połączenia 0, więc odsyłam tym samym połączeniem
               # nie wiem czy to jest poprawne rozumowanie?
-              dostarcz 0 "res [lindex $wierz0 1] $id_los youAreLider [expr 2*pow([lindex $wierz0 1], 1)]";
+              dostarcz 0 "res [lindex $wierz0 1] [lindex $wierz0 2] youAreLider [expr 2*pow([lindex $wierz0 1], 1)]";
               # dostarcz 0 "res [lindex $wierz0 1] $id_los youAreLider 2";
             } else {
               # jeśli komunikat pochodzi z fazy nr 0
-              dostarcz 0 "res 0 $id_los youAreLider 1";
+              dostarcz 0 "res 0 [lindex $wierz0 2] youAreLider 1";
             }
             # skoro trafiłem w to miejsce to nie jestem liderem
             set lider 0;
@@ -60,21 +83,23 @@ fiber create $liczbaWierz {
             # jeśli to ja mam większe ID_los od ID_los z odebranego komunikatu
             # UWAGA! zakładam, że wierzchołki mają różne ID_los
             if {[lindex $wierz0 1] > 0} {
-              dostarcz 0 "res [lindex $wierz0 1] $id_los youAreNotLider [expr 2*pow([lindex $wierz0 1], 1)]";
+              dostarcz 0 "res [lindex $wierz0 1] [lindex $wierz0 2] youAreNotLider [expr 2*pow([lindex $wierz0 1], 1)]";
             } else {
-              dostarcz 0 "res 0 $id_los youAreNotLider 1";
+              dostarcz 0 "res 0 [lindex $wierz0 2] youAreNotLider 1";
             }
           }
         } elseif {[lindex $x 0]=="req" && [lindex $x 3] > 1} {
           _puts "To nie moja faza! Wierzchołek nr $id, id_los: $id_los";
           # jeśli otrzymałem request, ale NIE JEST skierowany do mnie
-          set wierz0 [czytajKomTypu [lindex $x 0] 0];
+          set wierz0 $x;
+          lremove kom(0) $x;
           # zmniejsz licznik o -1
           lset wierz0 3 [expr [lindex $wierz0 3] - 1];
           # otrzymałem z połączenia nr 0 więc przekazuje połączeniem przeciwnym
           dostarcz 1 $wierz0;
         } elseif {[lindex $x 0]=="res" && [lindex $x 4] > 1} {
-          set wierz0 [czytajKomTypu [lindex $x 0] 0];
+          set wierz0 $x;
+          lremove kom(0) $x;
           lset wierz0 4 [expr [lindex $wierz0 4] - 1];
           dostarcz 1 $wierz0;
         }
@@ -85,7 +110,8 @@ fiber create $liczbaWierz {
         if {[lindex $y 0]=="req" && [lindex $y 3]==1} {
           _puts "Wierzchołek nr $id, id_los: $id_los, wykonuje request. Nr fazy: $phase";
           # zapisz komunikat i usuń z listy komunikatów
-          set wierz1 [czytajKomTypu [lindex $y 0] 1];
+          set wierz1 $y;
+          lremove kom(1) $y;
           # jeśli ID_losowe w komunikacie jest większe od mojego ID_los
           if {[lindex $wierz1 2] > $id_los} {
             # jeśli numer fazy jest większy od >= 1
@@ -94,10 +120,10 @@ fiber create $liczbaWierz {
               # w komunikacie odsyłam numer fazy wierzchołka od którego dostałem komunikat
               # komunikat dostałem z połączenia 1, więc odsyłam tym samym połączeniem
               # nie wiem czy to jest poprawne rozumowanie?
-              dostarcz 1 "res [lindex $wierz1 1] $id_los youAreLider [expr 2*pow([lindex $wierz1 1], 1)]";
+              dostarcz 1 "res [lindex $wierz1 1] [lindex $wierz1 2] youAreLider [expr 2*pow([lindex $wierz1 1], 1)]";
             } else {
               # jeśli komunikat pochodzi z fazy nr 0
-              dostarcz 1 "res 0 $id_los youAreLider 1";
+              dostarcz 1 "res 0 [lindex $wierz1 2] youAreLider 1";
             }
             # skoro trafiłem w to miejsce to nie jestem liderem
             set lider 0;
@@ -105,21 +131,23 @@ fiber create $liczbaWierz {
             # jeśli to ja mam większe ID_los od ID_los z odebranego komunikatu
             # UWAGA! zakładam, że wierzchołki mają różne ID_los
             if {[lindex $wierz1 1] > 0} {
-              dostarcz 1 "res [lindex $wierz1 1] $id_los youAreNotLider [expr 2*pow([lindex $wierz1 1], 1)]";
+              dostarcz 1 "res [lindex $wierz1 1] [lindex $wierz1 2] youAreNotLider [expr 2*pow([lindex $wierz1 1], 1)]";
             } else {
-              dostarcz 1 "res 0 $id_los youAreNotLider 1";
+              dostarcz 1 "res 0 [lindex $wierz1 2] youAreNotLider 1";
             }
           }
         } elseif {[lindex $y 0]=="req" && [lindex $y 3] > 1} {
           # jeśli otrzymałem request, ale NIE JEST skierowany do mnie
-          set wierz1 [czytajKomTypu [lindex $y 0] 1];
+          set wierz1 $y;
+          lremove kom(1) $y;
           # zmniejsz licznik o -1
           lset wierz1 3 [expr [lindex $wierz1 3] - 1];
           # otrzymałem z połączenia nr 1 więc przekazuje połączeniem przeciwnym
           dostarcz 0 $wierz1;
         } elseif {[lindex $y 0]=="res" && [lindex $y 4] > 1} {
           _puts "Upss, to nie dla mnie. Przekażę to dalej..."
-          set wierz1 [czytajKomTypu [lindex $y 0] 1];
+          set wierz1 $y;
+          lremove kom(1) $y;
           lset wierz1 4 [expr [lindex $wierz1 4] - 1];
           # przekaż dalej
           dostarcz 0 $wierz1;
@@ -130,19 +158,21 @@ fiber create $liczbaWierz {
         foreach y $kom(1) {
           # jeśli w obu listach komunikatów mam komunikaty typu 'res', numery faz komunikatów są takiego same
           # i numery faz zgadzają się z moim numerem fazy
-          if {[lindex $x 0]=="res" && [lindex $x 1]==[lindex $y 1] && [lindex $x 1]==$phase} {
+          if {[lindex $x 0]=="res" && [lindex $x 3]=="youAreFinalLider" && [lindex $y 3]=="youAreFinalLider" && [lindex $y 2] == $id_los} {
+            _puts "Lider wybrany!";
+          } elseif {[lindex $x 0]=="res" && [lindex $x 1]==[lindex $y 1] && [lindex $x 1]==$phase && [lindex $y 2] == $id_los} {
             _puts "Wierzchołek nr $id, id_los: $id_los, wykonuje response. Nr fazy: $phase";
             # zapisz komunikaty i usuń z list komunikatów
-            set wierz0 [czytajKomTypu [lindex $x 0] 0];
-            set wierz1 [czytajKomTypu [lindex $x 0] 1];
-            # poprawić po wprowadzeniu licznika
-            if {[lindex $wierz0 4]=="youAreNotLider" || [lindex $wierz1 4]=="youAreNotLider"} {
+            set wierz0 $x;
+            lremove kom(0) $x;
+            set wierz1 $y;
+            lremove kom(1) $y;
+            if {[lindex $wierz0 3]=="youAreNotLider" || [lindex $wierz1 3]=="youAreNotLider"} {
               set lider 0;
             }
             # skoro tu trafiłem to mogę zwiększyć mój numer fazy
             set phase [expr $phase + 1];
-          } elseif {[lindex $x 1]>$phase} {
-
+            set reqSent 0;
           }
         }
       }
@@ -154,7 +184,7 @@ fiber create $liczbaWierz {
 InicjalizacjaAsynch
 
 proc wizualizacja {} {
-  fiber_iterate {_puts "Wierzchołek nr $id, id_los: $id_los, lider: $lider, nr fazy: $phase, kom0: $kom0, kom1: $kom1"}
+  fiber_iterate {_puts "Wierzchołek nr $id, id_los: $id_los, lider: $lider, reqSent: $reqSent nr fazy: $phase, kom0: $kom0, kom1: $kom1"}
 }
 
 # ------ menu ------
@@ -170,6 +200,26 @@ fiber_eval 4 {set id_los 100}
 fiber_eval 5 {set id_los 300}
 fiber_eval 6 {set id_los 500}
 fiber_eval 7 {set id_los 700}
+
+# globalny licznik potrzebny do poprawnej wizualizacji
+global licznik;
+set licznik 0;
+
+proc egzekucja {liczbaWierz licznik args} {
+  set random [expr {int(rand()*[expr $liczbaWierz+1])}];
+  for {set i 0} {$i < $liczbaWierz} {incr i} {
+    if {$i!=$random && $licznik!=0} {
+      _puts "Wierzchołek $i działa"
+      fiber switchto $i;
+    } elseif {$licznik==0} {
+      _puts "Wierzchołek $i działa"
+      fiber switchto $i;
+      set licznik [expr $licznik + 1];
+    }
+  }
+}
+
+egzekucja $liczbaWierz $licznik; wizualizacja;
 
 fiber switchto 0; pokazKom
 fiber switchto 1; pokazKom
