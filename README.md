@@ -31,8 +31,8 @@
 # Co dostaniemy od Mateusza?
 (kilka, nie wszystkie)
 
-* zadanie 5 z tematu D (1 pkt.)
-* zadanie 6 z tematu D (1 pkt.)
-* zadanie 9 z tematu D (1 pkt.)
-* zadanie 10 z tematu D (1 pkt.)
-* zadanie 21 z tematu D (1 pkt.)
+* zadanie 5 z tematu D (0.75 pkt.)
+* zadanie 6 z tematu D (0.75 pkt.)
+* zadanie 9 z tematu D (0.75 pkt.)
+* zadanie 10 z tematu D (0.75 pkt.)
+* zadanie 21 z tematu D (0.75 pkt.)
