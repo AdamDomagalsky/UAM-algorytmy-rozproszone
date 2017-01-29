@@ -8,7 +8,7 @@
 
 ## Dawid Kędzierski
 
-* zadanie 3 (z gwiazdką)
+* zadanie 8
 * zadanie 33
 
 # Zrobione
@@ -27,6 +27,7 @@
 
 * zadanie 4 (przerobić zadanie 2) (1 pkt.)
 * zadanie 32 (1 pkt.)
+* zadanie 3 (z gwiazdką) // na razie tego nie robię, zamiast tego zrobię zadanie 8
 
 # Co dostaniemy od Mateusza?
 

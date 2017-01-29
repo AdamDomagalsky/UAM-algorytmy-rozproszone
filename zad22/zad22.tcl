@@ -23,7 +23,7 @@ fiber create $liczbaWierz {
       if {[string equal $item $string]} { continue }
       lappend in $item
     }
- }
+  }
 
   while {$run} {
     set licznik [expr 2*pow($phase, 1)];
@@ -110,9 +110,7 @@ fiber create $liczbaWierz {
             unset run;
             break;
           }
-        }
-        # jeśli otrzymałem request z prawej (?) strony i jest skierowany do mnie
-        if {[lindex $y 0]=="req" && [lindex $y 3]==1} {
+        } elseif {[lindex $y 0]=="req" && [lindex $y 3]==1} {
           # _puts "Wierzchołek nr $id, id_los: $id_los, wykonuje request. Nr fazy: $phase";
           # zapisz komunikat i usuń z listy komunikatów
           set wierz1 $y;
