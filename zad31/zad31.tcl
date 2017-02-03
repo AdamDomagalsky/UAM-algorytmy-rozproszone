@@ -31,7 +31,6 @@ fiber create $liczbaWierz {
         if {[lindex $kom($i) 0]=="SAFE"} {
           incr licznik;
         }
-        # to działa dla roota w przypadku gdy dostanie 2/3 komunikaty, chyba...
         if {$licznik == [expr $stopien - 1]} {
           set safe 1;
 
@@ -74,8 +73,6 @@ fiber create $liczbaWierz {
   }
 }
 
-fiber_eval 0 {set root 1}
-
 InicjalizacjaAsynch
 
 proc wizualizacja {} {
@@ -86,12 +83,16 @@ fiber error
 pokazKom
 wizualizacja
 
-fiber switchto 0; pokazKom
-fiber switchto 1; pokazKom
-fiber switchto 2; pokazKom
-fiber switchto 3; pokazKom
-fiber switchto 4; pokazKom
-fiber switchto 5; pokazKom
-fiber switchto 6; pokazKom
-fiber switchto 7; pokazKom
-fiber switchto 8; pokazKom
+# ustawić roota dopiero po pierwszej egzekucji
+fiber_eval 0 {set root 1}
+
+fiber switchto 0;
+fiber switchto 1;
+fiber switchto 2;
+fiber switchto 3;
+fiber switchto 4;
+fiber switchto 5;
+fiber switchto 6;
+fiber switchto 7;
+fiber switchto 8;
+pokazKom;

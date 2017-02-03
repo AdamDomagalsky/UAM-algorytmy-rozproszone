@@ -1,0 +1,133 @@
+/*
+   zastosowanie semaforow binarnych
+   do rozwiazania problemu "producenta/konsumenta"
+   ("nieskonczony" bufor)
+
+   UWAGA:
+     tutaj jest blad !!!
+*/
+
+atomic void Pokaz(string S) // zeby napisy sie nie "mieszaly" !
+{
+  cout<<which_proc()<<": "<<S<<endl;
+}
+
+
+const int rozmiar_buf=1000; // "nieskonczony" bufor
+int buf[rozmiar_buf];
+int buf_czyt=0;
+int buf_pisz=0;
+  //  el1, el2, el3, el4, el5, el6, el7, el8, ...
+  //       ^buf_czyt  <=  ^buf_pisz
+  // gdy buf_czyt==buf_pisz to bufor jest pusty !
+
+
+void Produkuj()
+{
+  int el; string[50] str;
+  el=random(1000);
+
+  sprintf(str,"produkuje %d; buf_pisz=%d, buf_czyt=%d",
+    el,buf_pisz,buf_czyt);
+  Pokaz(str);
+
+  buf[buf_pisz]=el;
+  buf_pisz++;
+  if(buf_pisz>=rozmiar_buf) exit(1);
+}
+
+void Konsumuj()
+{
+  int el; string[50] str;
+  el=buf[buf_czyt];
+
+  sprintf(str,"konsumuje %d; buf_pisz=%d, buf_czyt=%d",
+    el,buf_pisz,buf_czyt);
+  Pokaz(str);
+
+  buf_czyt++;
+  if(buf_czyt>=rozmiar_buf) exit(1);
+}
+
+
+binarysem S; // uzywany do wzajemnego wykluczania
+             // podczas wykonywania operacji na buforze
+
+binarysem Zwloka; // zeby konsument czekal,
+                  // gdy nic w buforze nie ma
+
+int N=0; // ilosc "nieskonsumowanych" elementow w buforze
+
+void Producent()
+{
+  int atrapa;
+
+  while(1) {
+    wait(S); // poczatek sekcji krytycznej
+    Produkuj();
+    if( N==0 ) signal(Zwloka); // pojawia się produkt
+    N++;
+    signal(S); // koniec sekcji krytycznej
+
+    atrapa=321;
+    atrapa=321; // chodzi o to aby producent nie wyprzedzal konsumenta !
+    atrapa=123;
+    atrapa=321;
+    atrapa=321;
+    atrapa=321;
+    atrapa=123;
+    atrapa=321;
+    atrapa=321;
+    atrapa=321;
+    atrapa=123;
+    atrapa=321;
+    atrapa=321;
+    atrapa=321;
+    atrapa=321;
+    atrapa=321;
+    atrapa=123;
+    atrapa=321;
+  }
+}
+
+
+void Konsument()
+{
+  int atrapa; string[20] str;
+
+  wait(Zwloka);
+  while(1) {
+    wait(Zwloka); // czekaj w kolejce
+    wait(S); // poczatek sekcji krytycznej
+    signal(Zwloka); // wyjdź z oczekiwania
+    Konsumuj();
+    N--;
+    if(N==0) wait(Zwloka); // brak produktów
+    signal(S); // koniec sekcji krytycznej
+
+    sprintf(str,"atrapa-poczatek; N=%d",N); Pokaz(str);
+    atrapa=123;
+    atrapa=321;
+    atrapa=123;
+    atrapa=321;
+    atrapa=123;
+    atrapa=321;
+    atrapa=123;
+    atrapa=321;
+    atrapa=321;
+    sprintf(str,"atrapa-koniec; N=%d",N); Pokaz(str);
+  }
+}
+
+main()
+{
+  initialsem(S,1);
+  initialsem(Zwloka,0);
+
+  cobegin {
+    Konsument();
+    Producent();
+  }
+}
+
+

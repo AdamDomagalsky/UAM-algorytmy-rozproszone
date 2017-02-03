@@ -1,6 +1,6 @@
 wm geom .konsola 667x664+321+12; wm geom .output 309x348+265+64; wm withdraw .; kons_font 15
 kons_font 16
-load ./q3.so
+load ./q3.dll
 
 proc wypelnijListe li {
   set w {}
