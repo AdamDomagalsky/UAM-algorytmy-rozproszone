@@ -28,11 +28,3 @@
 * zadanie 4 (przerobić zadanie 2) (1 pkt.)
 * zadanie 32 (1 pkt.)
 * zadanie 3 (z gwiazdką) // na razie tego nie robię, zamiast tego zrobię zadanie 8
-
-# Co dostaniemy od Mateusza?
-
-* zadanie 5 z tematu D (0.75 pkt.)
-* zadanie 6 z tematu D (0.75 pkt.)
-* zadanie 9 z tematu D (0.75 pkt.)
-* zadanie 10 z tematu D (0.75 pkt.)
-* zadanie 21 z tematu D (0.75 pkt.)
