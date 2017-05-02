@@ -1,4 +1,4 @@
-Zadania z ćwiczeń z przedmiotu 'Algorytmy rozproszone'. Prowadzącym przedmiot był dr hab. Michała Hanćkowiaka.
+Zadania z ćwiczeń z przedmiotu 'Algorytmy rozproszone'. Prowadzącym przedmiot był dr hab. Michał Hanćkowiak.
 
 # Treści zadań
 
