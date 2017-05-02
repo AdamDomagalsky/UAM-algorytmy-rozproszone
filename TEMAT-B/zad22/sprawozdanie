@@ -1,0 +1,989 @@
+0,  38: 0/ , 1/ , 0// , 1// ,
+1, 799: 0/ , 1/ , 0// , 1// ,
+2, 744: 0/ , 1/ , 0// , 1// ,
+3, 559: 0/ , 1/ , 0// , 1// ,
+4, 990: 0/ , 1/ , 0// , 1// ,
+5, 815: 0/ , 1/ , 0// , 1// ,
+6, 748: 0/ , 1/ , 0// , 1// ,
+7, 798: 0/ , 1/ , 0// , 1// ,
+liczbaWierz: 8, licznik: 0, random: 3
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 1, reqSent: 1 nr fazy: 0, kom0: {req 0 798 1}, kom1: {req 0 990 1}
+Wierzchołek nr 1, id_los: 799, lider: 1, reqSent: 1 nr fazy: 0, kom0: {req 0 748 1}, kom1: {req 0 815 1}
+Wierzchołek nr 2, id_los: 744, lider: 1, reqSent: 1 nr fazy: 0, kom0: {req 0 990 1}, kom1: {req 0 748 1}
+Wierzchołek nr 3, id_los: 559, lider: 1, reqSent: 1 nr fazy: 0, kom0: {req 0 815 1}, kom1: {req 0 798 1}
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 0, kom0: {req 0 38 1}, kom1: {req 0 744 1}
+Wierzchołek nr 5, id_los: 815, lider: 1, reqSent: 1 nr fazy: 0, kom0: {req 0 799 1}, kom1: {req 0 559 1}
+Wierzchołek nr 6, id_los: 748, lider: 1, reqSent: 1 nr fazy: 0, kom0: {req 0 744 1}, kom1: {req 0 799 1}
+Wierzchołek nr 7, id_los: 798, lider: 1, reqSent: 1 nr fazy: 0, kom0: {req 0 559 1}, kom1: {req 0 38 1}
+liczbaWierz: 8, licznik: 1, random: 6
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 1 nr fazy: 0, kom0: {res 0 38 youAreNotLider 1}, kom1: {res 0 38 youAreNotLider 1}
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 1 nr fazy: 0, kom0: , kom1: {res 0 799 youAreNotLider 1}
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 1 nr fazy: 0, kom0: {res 0 744 youAreNotLider 1}, kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 1 nr fazy: 0, kom0: {res 0 559 youAreNotLider 1}, kom1: {res 0 559 youAreNotLider 1}
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 1, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 1, reqSent: 1 nr fazy: 0, kom0: {req 0 744 1} {res 0 748 youAreLider 1}, kom1: {req 0 799 1} {res 0 748 youAreNotLider 1}
+Wierzchołek nr 7, id_los: 798, lider: 1, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 0
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 1 nr fazy: 0, kom0: {res 0 38 youAreNotLider 1} {req 1 798 2.0}, kom1: {res 0 38 youAreNotLider 1} {req 1 990 2.0}
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 1 nr fazy: 0, kom0: {res 0 799 youAreLider 1}, kom1: {res 0 799 youAreNotLider 1} {req 1 815 2.0}
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 1 nr fazy: 0, kom0: {res 0 744 youAreNotLider 1} {req 1 990 2.0}, kom1: {res 0 744 youAreNotLider 1}
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 1 815 2.0}, kom1: {req 1 798 2.0}
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 1, reqSent: 1 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 1, reqSent: 1 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 7
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {res 1 798 youAreNotLider 2.0}
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: {res 1 815 youAreLider 2.0}, kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {res 1 990 youAreLider 2.0}
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: {res 1 798 youAreNotLider 2.0}, kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 1, reqSent: 1 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 1, reqSent: 1 nr fazy: 1, kom0: {req 1 815 1.0}, kom1: {req 1 990 1.0}
+liczbaWierz: 8, licznik: 1, random: 6
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: {res 1 990 youAreLider 2.0}, kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {res 1 815 youAreLider 2.0}
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 1, kom0: , kom1: {res 1 990 youAreLider 1.0}
+Wierzchołek nr 5, id_los: 815, lider: 1, reqSent: 1 nr fazy: 1, kom0: {res 1 815 youAreLider 1.0}, kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 5
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 1, reqSent: 1 nr fazy: 1, kom0: {res 1 815 youAreLider 1.0}, kom1: {res 1 815 youAreLider 1.0}
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 4
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 1, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 0
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {req 2 990 4.0}
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {req 2 815 4.0}
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 2 990 4.0}, kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 2 815 4.0}, kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 1, reqSent: 1 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 3
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 2 990 2.0}, kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {req 2 815 2.0}
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 2 815 4.0}, kom1: {req 2 990 2.0}
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 1, reqSent: 1 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 6
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 2 815 2.0}, kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {res 2 990 youAreLider 4.0}
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: {res 2 815 youAreNotLider 4.0}, kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: {res 2 990 youAreLider 4.0}, kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 1 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 4
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: {res 2 990 youAreLider 2.0}, kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: {res 2 815 youAreNotLider 2.0}, kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {res 2 990 youAreLider 2.0}
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 2, kom0: {req 2 815 1.0}, kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 1 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 2
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {res 2 815 youAreNotLider 4.0}
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {res 2 990 youAreLider 2.0}
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 2, kom0: {res 2 990 youAreLider 1.0}, kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 1 nr fazy: 2, kom0: {res 2 815 youAreNotLider 1.0}, kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 7
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 0 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 1 nr fazy: 2, kom0: {res 2 815 youAreNotLider 1.0}, kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1: {res 2 815 youAreNotLider 3.0}
+liczbaWierz: 8, licznik: 1, random: 2
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {req 3 990 6.0}
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 3 990 6.0}, kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {res 2 815 youAreNotLider 2.0}
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 1 nr fazy: 2, kom0: {res 2 815 youAreNotLider 1.0}, kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 2
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 3 990 6.0}, kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {req 3 990 4.0}
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 0 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 4
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 3 990 4.0}, kom1: {req 3 990 2.0}
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 0 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 8
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: {res 3 990 youAreLider 6.0}, kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 3 990 2.0}, kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 0 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 3
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 3 990 2.0} {res 3 990 youAreLider 4.0}, kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 0 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 6
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: {res 3 990 youAreLider 2.0}, kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {res 3 990 youAreLider 6.0}
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 0 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 3
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {res 3 990 youAreLider 6.0}
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 3, kom0: {res 3 990 youAreLider 1.0}, kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 0 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 2
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {res 3 990 youAreLider 4.0}
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 3, kom0: {res 3 990 youAreLider 1.0}, kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 0 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 7
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {res 3 990 youAreLider 2.0}
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 3, kom0: {res 3 990 youAreLider 1.0}, kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 0 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 4
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 3, kom0: {res 3 990 youAreLider 1.0}, kom1: {res 3 990 youAreLider 1.0}
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 0 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 6
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 0 nr fazy: 4, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 0 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+0,  38: 0/ , 1/ , 0// , 1// ,
+1, 799: 0/ , 1/ , 0// , 1// ,
+2, 744: 0/ , 1/ , 0// , 1// ,
+3, 559: 0/ , 1/ , 0// , 1// ,
+4, 990: 0/ , 1/ , 0// , 1// ,
+5, 815: 0/ , 1/ , 0// , 1// ,
+6, 748: 0/ , 1/ , 0// , 1// ,
+7, 798: 0/ , 1/ , 0// , 1// ,
+liczbaWierz: 8, licznik: 1, random: 2
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {req 4 990 8.0}
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 4 990 8.0}, kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 4, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 0 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 0
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {req 4 990 8.0}
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 4 990 6.0}, kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 4, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 0 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 5
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {req 4 990 6.0}
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 4, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 0 nr fazy: 3, kom0: {req 4 990 5.0}, kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 0
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {req 4 990 4.0}
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 4 990 4.0}, kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 4, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 0 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 5
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 4 990 2.0}, kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {req 4 990 2.0}
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 4, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 0 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 5
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Lider wybrany!
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 4, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 0 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 1
+Wierzchołek 0 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 4, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 0 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 5
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 4, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 0 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 1
+Wierzchołek 0 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 38, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 799, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 744, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 559, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 4, id_los: 990, lider: 1, reqSent: 1 nr fazy: 4, kom0: , kom1:
+Wierzchołek nr 5, id_los: 815, lider: 0, reqSent: 0 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 6, id_los: 748, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 798, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+
+
+######## TEST 2 ########
+
+
+liczbaWierz: 8, licznik: 0, random: 2
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 1, reqSent: 1 nr fazy: 0, kom0: {req 0 9 1}, kom1: {req 0 386 1}
+Wierzchołek nr 1, id_los: 761, lider: 1, reqSent: 1 nr fazy: 0, kom0: {req 0 844 1}, kom1: {req 0 307 1}
+Wierzchołek nr 2, id_los: 212, lider: 1, reqSent: 1 nr fazy: 0, kom0: {req 0 386 1}, kom1: {req 0 844 1}
+Wierzchołek nr 3, id_los: 404, lider: 1, reqSent: 1 nr fazy: 0, kom0: {req 0 307 1}, kom1: {req 0 9 1}
+Wierzchołek nr 4, id_los: 386, lider: 1, reqSent: 1 nr fazy: 0, kom0: {req 0 351 1}, kom1: {req 0 212 1}
+Wierzchołek nr 5, id_los: 307, lider: 1, reqSent: 1 nr fazy: 0, kom0: {req 0 761 1}, kom1: {req 0 404 1}
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 0, kom0: {req 0 212 1}, kom1: {req 0 761 1}
+Wierzchołek nr 7, id_los: 9, lider: 1, reqSent: 1 nr fazy: 0, kom0: {req 0 404 1}, kom1: {req 0 351 1}
+liczbaWierz: 8, licznik: 1, random: 0
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 1, reqSent: 1 nr fazy: 0, kom0: {req 0 9 1} {res 0 351 youAreLider 1}, kom1: {req 0 386 1} {res 0 351 youAreNotLider 1}
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 1 nr fazy: 0, kom0: {res 0 761 youAreNotLider 1}, kom1: {res 0 761 youAreLider 1}
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 1 nr fazy: 0, kom0: {res 0 212 youAreNotLider 1}, kom1: {res 0 212 youAreNotLider 1}
+Wierzchołek nr 3, id_los: 404, lider: 1, reqSent: 1 nr fazy: 0, kom0: {res 0 404 youAreLider 1}, kom1: {res 0 404 youAreLider 1}
+Wierzchołek nr 4, id_los: 386, lider: 1, reqSent: 1 nr fazy: 0, kom0: , kom1: {res 0 386 youAreLider 1}
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 1 nr fazy: 0, kom0: {res 0 9 youAreNotLider 1}, kom1:
+liczbaWierz: 8, licznik: 1, random: 5
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 1 844 2.0}, kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {req 1 844 2.0}
+Wierzchołek nr 3, id_los: 404, lider: 1, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 4, id_los: 386, lider: 1, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 2
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 1 404 1.0}, kom1: {req 1 386 2.0}
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {res 1 844 youAreLider 2.0} {req 1 404 1.0}
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 1 386 2.0}, kom1: {req 1 844 2.0}
+Wierzchołek nr 3, id_los: 404, lider: 1, reqSent: 1 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 4, id_los: 386, lider: 1, reqSent: 1 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 6
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: {res 1 386 youAreLider 2.0}, kom1:
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: {res 1 844 youAreLider 2.0}, kom1:
+Wierzchołek nr 3, id_los: 404, lider: 1, reqSent: 1 nr fazy: 1, kom0: {res 1 404 youAreNotLider 1.0}, kom1: {res 1 404 youAreLider 1.0}
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 1 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 1, kom0: {req 1 386 1.0}, kom1: {res 1 844 youAreLider 1.0}
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 7
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {res 1 386 youAreNotLider 2.0}
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 1 nr fazy: 1, kom0: {res 1 386 youAreLider 1.0}, kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 5
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 2 844 4.0}, kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {req 2 844 4.0}
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 7
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {req 2 844 2.0}
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: {req 2 844 2.0}, kom1:
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 8
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: {res 2 844 youAreLider 4.0}, kom1:
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1: {res 2 844 youAreLider 4.0}
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 8
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {res 2 844 youAreLider 2.0}
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: {res 2 844 youAreLider 2.0}, kom1:
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 4
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 0 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 0
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 3 844 6.0}, kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {req 3 844 6.0}
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 0
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {req 3 844 4.0}
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: {req 3 844 4.0}, kom1:
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 8
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 3 844 2.0}, kom1:
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1: {req 3 844 2.0}
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 3
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {res 3 844 youAreLider 6.0}
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1: {req 3 844 2.0}
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 2
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: {res 3 844 youAreLider 6.0}, kom1: {res 3 844 youAreLider 4.0}
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 6
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: {res 3 844 youAreLider 4.0}, kom1:
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {res 3 844 youAreLider 2.0}
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 3, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 4
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: {res 3 844 youAreLider 3.0}, kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 3, kom0: , kom1: {res 3 844 youAreLider 1.0}
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 1
+Wierzchołek 0 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: {res 3 844 youAreLider 2.0}, kom1:
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 3, kom0: , kom1: {res 3 844 youAreLider 1.0}
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 5
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 0 nr fazy: 4, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 0
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 4 844 8.0}, kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {req 4 844 8.0}
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 4, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 2
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {req 4 844 8.0}
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: {req 4 844 6.0}, kom1:
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 4, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 6
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 4 844 4.0}, kom1: {req 4 844 6.0}
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 4, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 3
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: {req 4 844 2.0}, kom1:
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1: {req 4 844 4.0}
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 4, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 7
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1: {req 4 844 2.0}
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 4, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 6
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 4 działa
+Wierzchołek 5 działa
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 4, kom0: , kom1: {req 4 844 1.0}
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+liczbaWierz: 8, licznik: 1, random: 4
+Wierzchołek 0 działa
+Wierzchołek 1 działa
+Wierzchołek 2 działa
+Wierzchołek 3 działa
+Wierzchołek 5 działa
+Wierzchołek 6 działa
+Lider wybrany!
+Wierzchołek 7 działa
+Wierzchołek nr 0, id_los: 351, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 1, id_los: 761, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 2, id_los: 212, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 3, id_los: 404, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 4, id_los: 386, lider: 0, reqSent: 0 nr fazy: 2, kom0: , kom1:
+Wierzchołek nr 5, id_los: 307, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
+Wierzchołek nr 6, id_los: 844, lider: 1, reqSent: 1 nr fazy: 4, kom0: , kom1:
+Wierzchołek nr 7, id_los: 9, lider: 0, reqSent: 0 nr fazy: 1, kom0: , kom1:
